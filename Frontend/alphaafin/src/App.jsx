@@ -8,7 +8,7 @@ function App() {
   const AboutUs = lazy(()=>import('./components/views/AboutUs'))
   const Faqs =  lazy(()=>import('./components/views/Faqs'))
   return (
-    <Router>
+    <Router basename='/alphaafin'>
       <div className='w-full h-full bg-white flex flex-col'>
         <Suspense fallback={<div>Loading...</div>}>
           <Navbar />
