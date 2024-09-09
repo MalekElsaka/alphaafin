@@ -7,6 +7,7 @@ function App() {
   const Navbar = lazy(()=>import('./components/navbar/Navbar'))
   const AboutUs = lazy(()=>import('./components/views/AboutUs'))
   const Faqs =  lazy(()=>import('./components/views/Faqs'))
+  const Services = lazy(()=>import('./components/views/Services'))
   return (
     <Router basename='/alphaafin'>
       <div className='w-full h-full bg-white flex flex-col'>
@@ -16,7 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/faqs" element={<Faqs />} />
-
+            <Route path="/services" element={<Services />} />
           </Routes>
         </Suspense>
       </div>
