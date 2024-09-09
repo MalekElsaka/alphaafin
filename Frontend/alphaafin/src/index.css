@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.menu-visible {
+  max-height: 344px;
+  /* Adjust this value to match the height of your menu */
+  transition: max-height 0.3s ease-in;
+}
+
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  z-index: 0;
+}
+
+.text-fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 7s forwards;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.moving-svg {
+  animation: moveUpDown 1.3s infinite;
+}
+
+@keyframes moveUpDown1 {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px);
+  }
+}
+
+@keyframes moveUpDown2 {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+}
+
+.moving-svg-1 {
+  animation: moveUpDown1 1.3s infinite;
+}
+
+.moving-svg-2 {
+  animation: moveUpDown2 1.3s infinite;
+}
+
+.bg-half-red-white {
+  background: linear-gradient(to bottom, #2A2C38 60%, #F5F5F5 40%);
+}
+
+
+.triangle-container::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white; 
+}
