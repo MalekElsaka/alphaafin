@@ -23,7 +23,7 @@ const Services = () => {
     return (
         <>
             <div className="w-full h-[276px] bg-[#F5F5F5] flex flex-col items-center justify-center">
-                <img className="h-[60px] w-[80px]" src={servicesIcon} alt="" />
+                <img loading="lazy" className="h-[60px] w-[80px]" src={servicesIcon} alt="" />
                 <p className="text-[37px] mt-2 text-alpha_black font-cairo font-semibold">Our Services</p>
             </div>
 

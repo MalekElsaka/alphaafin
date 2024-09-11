@@ -128,7 +128,7 @@ const Faqs = () => {
                 <div className="flex px-8 lg:flex-row flex-col items-stretch h-fit max-w-[1300px] w-full mx-auto lg:space-x-16">
 
                     <div className="flex lg:w-[48%] lg:order-1 relative overflow-clip rounded-xl  lg:mt-0 mt-6 order-2 w-full ">
-                        <img className="w-full min-h-[520px] h-full object-cover" src={img} alt="" />
+                        <img loading="lazy" className="w-full min-h-[520px] h-full object-cover" src={img} alt="" />
                         <div className='absolute flex flex-col items-center justify-center hover:bg-white transition-all duration-300 cursor-pointer px-4 py-4 bg-alpha_orange right-0 w-[164px] h-[174px] rounded-bl-xl'>
                             <svg aria-hidden="true" className="e-font-icon-svg fill-alpha_gray h-14 w-14 e-fas-play" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
                             <p className='mt-5 font-cairo text-alpha_gray font-semibold text-[18.5px]'>Watch Video</p>
@@ -186,7 +186,7 @@ const Faqs = () => {
             <div className='w-full bg-half-red-white px-6 h-fit pb-4 flex flex-col items-center justify-center'>
                 <div className=' overflow-clip h-full max-w-[1238px] rounded-2xl min-h-[384px] w-full flex flex-col lg:flex-row'>
                     <div className='lg:w-[35%] w-full lg:min-h-full lg:max-h-full max-h-[300px]'>
-                        <img className='h-full w-full object-cover' src="https://alphaafin.com.au/wp-content/uploads/2024/08/img-section-10-1.jpg" alt="" />
+                        <img loading="lazy" className='h-full w-full object-cover' src="https://alphaafin.com.au/wp-content/uploads/2024/08/img-section-10-1.jpg" alt="" />
                     </div>
 
                     <div className='lg:w-[65%] w-full bg-alpha_orange px-14 py-14 flex flex-col'>
@@ -217,15 +217,15 @@ const Faqs = () => {
                     <div className='flex mt-[70px] flex-row w-fit h-fit space-x-5'>
 
                         <div className='border-r-4 h-[105px] w-[100px] border-b-4 border-alpha_orange rounded-xl overflow-clip'>
-                            <img className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-2-1.jpg" alt="" />
+                            <img loading="lazy" className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-2-1.jpg" alt="" />
                         </div>
 
                         <div className='h-[105px] w-[100px] border-b-4 border-alpha_orange rounded-xl overflow-clip'>
-                            <img className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-1-1.jpg" alt="" />
+                            <img loading="lazy" className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-1-1.jpg" alt="" />
                         </div>
 
                         <div className='border-l-4 h-[105px] w-[100px] border-b-4 border-alpha_orange rounded-xl overflow-clip'>
-                            <img className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-3-1.jpg" alt="" />
+                            <img loading="lazy" className='h-full w-full' src="https://alphaafin.com.au/wp-content/uploads/2024/08/testimonial-3-1.jpg" alt="" />
                         </div>
                     </div>
                     <Draggable events={events} ref={ref} />

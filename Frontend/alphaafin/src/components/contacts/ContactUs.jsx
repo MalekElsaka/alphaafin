@@ -31,14 +31,14 @@ const ContactUs = () => {
                 </div>
 
                 <div className="w-[48%] md2:flex h-full hidden">
-                    <img className="h-auto w-full self-start object-contain" src={phone} alt="" />
+                    <img loading="lazy" className="h-auto w-full self-start object-contain" src={phone} alt="" />
                 </div>
 
             </div>
 
             <div className="md2:hidden flex w-full">
                 <div className="mx-6">
-                    <img className="h-auto w-full self-start object-contain" src={phone} alt="" />
+                    <img loading="lazy" className="h-auto w-full self-start object-contain" src={phone} alt="" />
                 </div>
             </div>
         </>
