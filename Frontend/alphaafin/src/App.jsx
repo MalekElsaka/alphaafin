@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './components/views/Home';
 import Navbar from './components/navbar/Navbar';
+import Loading from './components/loading/Loading';
 const AboutUs = lazy(() => import('./components/views/AboutUs'));
 const Faqs = lazy(() => import('./components/views/Faqs'));
 const Services = lazy(() => import('./components/views/Services'));
 
-const Loading = () => <div>Loading...</div>;
 
 function App() {
   return (
